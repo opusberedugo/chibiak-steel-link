@@ -1,0 +1,26 @@
+.text-white{
+  color: white;
+}
+
+nav{
+  .options{
+    a{
+      &:hover{
+        color: white;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+section.hero{
+  background-image: linear-gradient(#05daf2a8, #05daf2a8), url("../img/ant-rozetsky-SLIFI67jv5k-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+// .services{
+//   .grid{
+//     gap: 1.25rem;
+//   }
+// }

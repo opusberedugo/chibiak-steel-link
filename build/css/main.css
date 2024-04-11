@@ -1,0 +1,16 @@
+.text-white {
+  color: white;
+}
+
+nav .options a:hover {
+  color: white;
+  font-weight: 600;
+}
+
+section.hero {
+  background-image: linear-gradient(rgba(5, 218, 242, 0.6588235294), rgba(5, 218, 242, 0.6588235294)), url("../img/ant-rozetsky-SLIFI67jv5k-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=main.css.map */
