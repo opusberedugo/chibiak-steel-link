@@ -8,9 +8,19 @@ nav .options a:hover {
 }
 
 section.hero {
-  background-image: linear-gradient(rgba(5, 218, 242, 0.6588235294), rgba(5, 218, 242, 0.6588235294)), url("../img/ant-rozetsky-SLIFI67jv5k-unsplash.jpg");
+  background-image: linear-gradient(rgba(3, 62, 140, 0.6588235294) 75%, rgba(5, 218, 242, 0.6588235294)), url("../img/ant-rozetsky-SLIFI67jv5k-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+section.wcu li {
+  list-style-image: url("../img/list-img.svg");
+  list-style-position: inside;
+  vertical-align: middle;
+  line-height: 20px;
+  list-style: none;
+  background: url(../img/list-img.svg) left center no-repeat;
+  padding-left: 25px;
 }
 
 /*# sourceMappingURL=main.css.map */
