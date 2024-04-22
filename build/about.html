@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,78 +9,307 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
 
-    <!-- Nav Bar -->
-    <nav class="lg:flex lg:items-center lg:bg-white lg:shadow-md lg:justify-between lg:px-6">
-      <div class="brand sm:flex sm:justify-between sm:items-center sm:p-4 sm:shadow-sm lg:block lg:bg-transparent">
-        <a href="./index.html" class="logo block">
-          <img src="./img/logo.png" class="block w-12" alt="" srcset="">
-        </a>
-        <button title="menu" href="" class="bg-darkblue p-2 rounded-md lg:hidden">
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" viewBox="0 0 24 24" fill="currentColor">
-            <path fill="#ffffff" d="M18 18V20H6V18H18ZM21 11V13H3V11H21ZM18 4V6H6V4H18Z"></path>
-          </svg>
-        </button>
-      </div>
-  
-      <div class="options sm:hidden lg:flex">
-        <a href="./" class="sm:block sm:p-4 sm:hover:bg-darkblue  ">Home</a>
-        <a href="./about.html" class="sm:block sm:p-4 sm:hover:bg-darkblue ">About</a>
-        <a href="#" class="sm:block sm:p-4 sm:hover:bg-darkblue ">Services</a>
-        <a href="#" class="sm:block sm:p-4 sm:hover:bg-darkblue ">Gallery</a>
-        <a href="#" class="sm:block sm:p-4 sm:hover:bg-darkblue ">Contact</a>
-      </div>
-    </nav>
-    <!-- End of Nav Bar -->
-  
-    <!-- Hero Section -->
-    <section class="hero grid p-9 py-20 grid-cols-4 text-white">
-      <div class="container p-6 py-8 col-start-1 col-end-4">
-        <h1 class="text-5xl py-6 font-semibold">Empowering Tomorrow <br> with Steel Excellence</h1>
-        <p class="py-6">Welcome to Chibiak Steel Link Limited, your premier destination for high-quality steel products
-          and solutions. With a steadfast commitment to excellence and innovation, we deliver reliable steel solutions
-          tailored to meet your needs. From construction to infrastructure, manufacturing to fabrication, trust Chibiak
-          Steel Link Limited to be your steadfast partner in building a stronger, more resilient future.</p>
-  
-        <a href="#" class="bg-white text-darkblue p-5 rounded-full block w-fit my-3 px-6 font-semibold hover:scale-105">Get Started</a>
-      </div>
-    </section>
-    <!-- End of Hero Section -->
+  <!-- Nav Bar -->
+  <nav class="lg:flex lg:items-center lg:bg-white lg:shadow-md lg:justify-between lg:px-6">
+    <div class="brand sm:flex sm:justify-between sm:items-center sm:p-4 sm:shadow-sm lg:block lg:bg-transparent">
+      <a href="./index.html" class="logo block">
+        <img src="./img/logo.png" class="block w-12" alt="" srcset="">
+      </a>
+      <button title="menu" href="" class="bg-darkblue p-2 rounded-md lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" viewBox="0 0 24 24" fill="currentColor">
+          <path fill="#ffffff" d="M18 18V20H6V18H18ZM21 11V13H3V11H21ZM18 4V6H6V4H18Z"></path>
+        </svg>
+      </button>
+    </div>
 
-    <footer class="bg-black text-white p-6 flex md:justify-between items-center text-white">
-      <img src="./img/logo.png" class="w-10 " alt="">
-      <div class="links flex items-center">
-        <a href="" class="bg-white p-1 mx-2 rounded-md">
-          <svg width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-            <path fill="#0D0d0d"
-              d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47062 14 5.5 16 5.5H17.5V2.1401C17.1743 2.09685 15.943 2 14.6429 2C11.9284 2 10 3.65686 10 6.69971V9.5H7V13.5H10V22H14V13.5Z">
-            </path>
-          </svg>
-        </a>
-        <a href="" class="bg-white p-1 mx-2 rounded-md">
-          <svg width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-            <path fill="#0d0d0d"
-              d="M12.001 9C10.3436 9 9.00098 10.3431 9.00098 12C9.00098 13.6573 10.3441 15 12.001 15C13.6583 15 15.001 13.6569 15.001 12C15.001 10.3427 13.6579 9 12.001 9ZM12.001 7C14.7614 7 17.001 9.2371 17.001 12C17.001 14.7605 14.7639 17 12.001 17C9.24051 17 7.00098 14.7629 7.00098 12C7.00098 9.23953 9.23808 7 12.001 7ZM18.501 6.74915C18.501 7.43926 17.9402 7.99917 17.251 7.99917C16.5609 7.99917 16.001 7.4384 16.001 6.74915C16.001 6.0599 16.5617 5.5 17.251 5.5C17.9393 5.49913 18.501 6.0599 18.501 6.74915ZM12.001 4C9.5265 4 9.12318 4.00655 7.97227 4.0578C7.18815 4.09461 6.66253 4.20007 6.17416 4.38967C5.74016 4.55799 5.42709 4.75898 5.09352 5.09255C4.75867 5.4274 4.55804 5.73963 4.3904 6.17383C4.20036 6.66332 4.09493 7.18811 4.05878 7.97115C4.00703 9.0752 4.00098 9.46105 4.00098 12C4.00098 14.4745 4.00753 14.8778 4.05877 16.0286C4.0956 16.8124 4.2012 17.3388 4.39034 17.826C4.5591 18.2606 4.7605 18.5744 5.09246 18.9064C5.42863 19.2421 5.74179 19.4434 6.17187 19.6094C6.66619 19.8005 7.19148 19.9061 7.97212 19.9422C9.07618 19.9939 9.46203 20 12.001 20C14.4755 20 14.8788 19.9934 16.0296 19.9422C16.8117 19.9055 17.3385 19.7996 17.827 19.6106C18.2604 19.4423 18.5752 19.2402 18.9074 18.9085C19.2436 18.5718 19.4445 18.2594 19.6107 17.8283C19.8013 17.3358 19.9071 16.8098 19.9432 16.0289C19.9949 14.9248 20.001 14.5389 20.001 12C20.001 9.52552 19.9944 9.12221 19.9432 7.97137C19.9064 7.18906 19.8005 6.66149 19.6113 6.17318C19.4434 5.74038 19.2417 5.42635 18.9084 5.09255C18.573 4.75715 18.2616 4.55693 17.8271 4.38942C17.338 4.19954 16.8124 4.09396 16.0298 4.05781C14.9258 4.00605 14.5399 4 12.001 4ZM12.001 2C14.7176 2 15.0568 2.01 16.1235 2.06C17.1876 2.10917 17.9135 2.2775 18.551 2.525C19.2101 2.77917 19.7668 3.1225 20.3226 3.67833C20.8776 4.23417 21.221 4.7925 21.476 5.45C21.7226 6.08667 21.891 6.81333 21.941 7.8775C21.9885 8.94417 22.001 9.28333 22.001 12C22.001 14.7167 21.991 15.0558 21.941 16.1225C21.8918 17.1867 21.7226 17.9125 21.476 18.55C21.2218 19.2092 20.8776 19.7658 20.3226 20.3217C19.7668 20.8767 19.2076 21.22 18.551 21.475C17.9135 21.7217 17.1876 21.89 16.1235 21.94C15.0568 21.9875 14.7176 22 12.001 22C9.28431 22 8.94514 21.99 7.87848 21.94C6.81431 21.8908 6.08931 21.7217 5.45098 21.475C4.79264 21.2208 4.23514 20.8767 3.67931 20.3217C3.12348 19.7658 2.78098 19.2067 2.52598 18.55C2.27848 17.9125 2.11098 17.1867 2.06098 16.1225C2.01348 15.0558 2.00098 14.7167 2.00098 12C2.00098 9.28333 2.01098 8.94417 2.06098 7.8775C2.11014 6.8125 2.27848 6.0875 2.52598 5.45C2.78014 4.79167 3.12348 4.23417 3.67931 3.67833C4.23514 3.1225 4.79348 2.78 5.45098 2.525C6.08848 2.2775 6.81348 2.11 7.87848 2.06C8.94514 2.0125 9.28431 2 12.001 2Z">
-            </path>
-          </svg>
-        </a>
-        <a href="" class="bg-white p-1 mx-2 rounded-md">
-          <svg width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-            <path fill="#0d0d0d"
-              d="M8 2H1L9.26086 13.0145L1.44995 21.9999H4.09998L10.4883 14.651L16 22H23L14.3917 10.5223L21.8001 2H19.1501L13.1643 8.88578L8 2ZM17 20L5 4H7L19 20H17Z">
-            </path>
-          </svg>
-        </a>
-        <a href="" class="bg-white p-1 mx-2 rounded-md">
-          <svg width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-            <path fill="#0d0d0d"
-              d="M6.94048 4.99993C6.94011 5.81424 6.44608 6.54702 5.69134 6.85273C4.9366 7.15845 4.07187 6.97605 3.5049 6.39155C2.93793 5.80704 2.78195 4.93715 3.1105 4.19207C3.43906 3.44699 4.18654 2.9755 5.00048 2.99993C6.08155 3.03238 6.94097 3.91837 6.94048 4.99993ZM7.00048 8.47993H3.00048V20.9999H7.00048V8.47993ZM13.3205 8.47993H9.34048V20.9999H13.2805V14.4299C13.2805 10.7699 18.0505 10.4299 18.0505 14.4299V20.9999H22.0005V13.0699C22.0005 6.89993 14.9405 7.12993 13.2805 10.1599L13.3205 8.47993Z">
-            </path>
-          </svg>
-        </a>
+    <div class="options sm:hidden lg:flex">
+      <a href="./" class="sm:block sm:p-4 sm:hover:bg-darkblue  ">Home</a>
+      <a href="./about.html" class="sm:block sm:p-4 sm:hover:bg-darkblue ">About</a>
+      <a href="#" class="sm:block sm:p-4 sm:hover:bg-darkblue ">Services</a>
+      <a href="#" class="sm:block sm:p-4 sm:hover:bg-darkblue ">Gallery</a>
+      <a href="#" class="sm:block sm:p-4 sm:hover:bg-darkblue ">Contact</a>
+    </div>
+  </nav>
+  <!-- End of Nav Bar -->
+
+  <!-- Hero Section -->
+  <section class="hero grid p-9 py-20 grid-cols-4 text-white">
+    <div class="container p-6 py-8 col-start-1 col-end-4">
+      <h1 class="text-5xl py-6 font-semibold">Discover the Essence of <br /> Chibiak Steel Link Limited</h1>
+      <p class="py-6">Welcome to Chibiak Steel Link Limited, where our story is a tapestry woven with passion,
+        innovation, and unwavering commitment. As pioneers in the steel industry, we stand at the forefront of progress,
+        driven by a vision to redefine what's possible. Our journey is one of resilience, fueled by a relentless pursuit
+        of excellence and a steadfast dedication to our values. Join us as we embark on a journey of exploration,
+        discovery, and transformation. Welcome to the heart of Chibiak Steel Link Limited.</p>
+
+      <a href="#"
+        class="bg-white text-darkblue p-5 rounded-full block w-fit my-3 px-6 font-semibold hover:scale-105">Learn
+        More</a>
+    </div>
+  </section>
+  <!-- End of Hero Section -->
+
+  <!-- Story Section -->
+  <section class="story lg:px-20 py-6">
+    <div class="">
+      <h3 class="text-red font-bold">Our Story</h3>
+      <h3 class="text-3xl ">Origins of Innovation: Our Inspiring Journey</h3>
+
+      <p class="my-3 px-9">Embedded within the narrative of our company's inception lies a story teeming with
+        inspiration and determination. It's not merely a tale of events but a saga that speaks to the human capacity for
+        ingenuity and the relentless pursuit of progress. Our journey began against the backdrop of an industry ripe for
+        disruption, where traditional paradigms begged to be challenged, and innovation beckoned as the harbinger of
+        change.</p>
+    </div>
+
+    <p class="my-3 px-9">Fuelled by a desire to challenge the status quo, our founders embarked on a journey fueled by
+      ingenuity and resilience. They saw an opportunity to revolutionize the steel sector, not merely as a commodity but
+      as a catalyst for transformative change. Drawing from diverse backgrounds and experiences, they forged a
+      collective vision to create a company that would set new standards of quality, reliability, and sustainability.
+    </p>
+    </div>
+
+    <p class="my-3 px-9">The genesis of Chibiak Steel Link Limited is a symphony of audacity and endurance, woven into
+      the very fabric of our ethos. Through the crucible of challenges and the cauldron of trials, our founders forged
+      forward, guided by an unyielding commitment to their convictions. Their legacy lingers like a luminous beacon,
+      illuminating every endeavor with the brilliance of innovation, integrity, and indefatigable resolve. Today, as we
+      traverse the trails of time, we stand steadfast on the threshold of tomorrow, propelled by the same passion and
+      purpose that ignited our inception.</p>
+    </div>
+
+  </section>
+  <!-- End of Story Section -->
+
+  <!-- Values Section -->
+  <section class="values lg:px-20 py-6">
+    <h3 class="text-red font-bold">Our Values and Philosophy</h3>
+    <h3 class="text-3xl ">Guiding Principles: Our Commitment to Excellence and Sustainability</h3>
+
+    <!-- Grid -->
+    <div class="grid grid-cols-3 items-center justify-center gap-5">
+      <!-- Grid Column -->
+      <div class="col-span-1 ">
+        <!-- Card -->
+        <div class="card max-w-none mx-auto my-6 bottom-right-accent">
+          <div class="shadow-lg rounded-lg bg-white overflow-hidden">
+            <div class="card-heder p-6">
+              Excellence
+            </div>
+            <div class="card-body p-6 pt-0">
+              At Chibiak Steel Link Limited, excellence is not just a goal; it's a standard we uphold in every aspect of
+              our operations. We are dedicated to achieving excellence by consistently delivering superior products,
+              services, and experiences to our customers. Through continuous improvement, rigorous quality control, and
+              a relentless pursuit of perfection, we strive to exceed expectations and set new benchmarks for success in
+              the steel industry.
+            </div>
+          </div>
+        </div>
+        <!-- Card -->
+
+        <!-- Card -->
+        <div class="card max-w-none mx-auto my-6 top-right-accent">
+          <div class="shadow-lg rounded-lg bg-white overflow-hidden ">
+            <div class="card-heder p-6">
+              Integrity
+            </div>
+            <div class="card-body p-6 pt-0">
+              Innovation lies at the heart of our company's culture and drives our quest for progress and growth. At
+              Chibiak Steel Link Limited, we foster a culture of innovation that encourages creativity, curiosity, and
+              forward-thinking. By embracing emerging technologies, exploring new ideas, and challenging conventional
+              wisdom, we continuously strive to push the boundaries of what's possible in the steel industry, staying
+              ahead of the curve and driving positive change.
+            </div>
+          </div>
+        </div>
+        <!-- Card -->
       </div>
-    </footer>
-    
+      <!-- Grid Column -->
+
+      <!-- Grid Column -->
+      <div class="col-span-1 ">
+        <div class="card max-w-none mx-auto top-left-accent bottom-right-accent">
+          <div class="shadow-lg rounded-lg bg-white overflow-hidden">
+            <div class="card-heder p-6">
+              Customer-Centricity
+            </div>
+            <div class="card-body p-6 pt-0">
+              At Chibiak Steel Link Limited, our customers are at the heart of everything we do. We are deeply committed
+              to understanding their needs, preferences, and challenges to deliver tailored solutions that exceed
+              expectations. By placing customer satisfaction and success as our top priority, we build lasting
+              relationships based on trust, reliability, and mutual respect. Our unwavering dedication to
+              customer-centricity drives us to continuously innovate and improve, ensuring that we always deliver value
+              and excellence to our customers.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Grid Column -->
+
+      <!-- Grid Column -->
+      <div class="col-span-1">
+        <!-- Card -->
+        <div class="card max-w-none mx-auto my-6 bottom-left-accent">
+          <div class="shadow-lg rounded-lg bg-white overflow-hidden ">
+            <div class="card-heder p-6">
+              Sustainability
+            </div>
+            <div class="card-body p-6 pt-0">
+              Sustainability is a core value that guides our actions and decisions at Chibiak Steel Link Limited. We are
+              committed to minimizing our environmental footprint and promoting sustainable practices throughout our
+              operations. From responsible sourcing of raw materials to energy-efficient manufacturing processes and
+              waste reduction initiatives, we prioritize sustainability in everything we do. By safeguarding the
+              environment and supporting the well-being of future generations, we aim to create a more sustainable and
+              resilient world.
+            </div>
+          </div>
+        </div>
+        <!-- Card -->
+
+        <!-- Card -->
+        <div class="card max-w-none mx-auto my-6 top-left-accent">
+          <div class="shadow-lg rounded-lg bg-white overflow-hidden">
+            <div class="card-heder p-6">
+              Innovation
+            </div>
+            <div class="card-body p-6 pt-0">
+              Innovation lies at the heart of our company's culture and drives our quest for progress and growth. At
+              Chibiak Steel Link Limited, we foster a culture of innovation that encourages creativity, curiosity, and
+              forward-thinking. By embracing emerging technologies, exploring new ideas, and challenging conventional
+              wisdom, we continuously strive to push the boundaries of what's possible in the steel industry, staying
+              ahead of the curve and driving positive change.
+            </div>
+          </div>
+        </div>
+        <!-- Card -->
+      </div>
+      <!-- Grid Column -->
+
+    </div>
+    <!-- End of Grid -->
+  </section>
+  <!-- End of  Values Section -->
+
+  <!-- Our Vision -->
+  <section class="vision items-center my-12">
+    <div class="grid grid-cols-3 items-center">
+      <div class="col-span-1">
+        <img src="./img/serhat-beyazkaya-ayWgRkCk2sQ-unsplash.jpg" alt="" class="w-full">
+      </div>
+
+      <div class="col-span-2 px-12">
+        <h3 class="text-red font-bold">Our Vision</h3>
+        <h3 class="text-3xl ">The Future we Picture</h3>
+
+        <p>Our vision at Chibiak Steel Link Limited is to redefine the boundaries of possibility in the steel industry,
+          setting new standards of excellence and innovation. We envision a future where steel is not just a commodity
+          but a catalyst for transformative change, powering the infrastructure, construction, and manufacturing sectors
+          with strength, durability, and sustainability. Through continuous innovation, strategic partnerships, and a
+          relentless commitment to customer success, we aspire to be at the forefront of industry advancements, driving
+          progress and prosperity for generations to come.</p>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- End Our Vision -->
+
+  <!-- Our Mission -->
+  <section class="mission items-center my-12">
+    <div class="grid grid-cols-5 items-center">
+      <div class="col-span-3 px-12">
+        <h3 class="text-red font-bold">Our Mission</h3>
+        <h3 class="text-3xl ">What we aim for</h3>
+
+        <p>At Chibiak Steel Link Limited, our mission is to be the leading provider of innovative and sustainable steel
+          solutions, empowering our customers to build a better future. We are dedicated to delivering exceptional value
+          through excellence in products, services, and customer experiences, while upholding the highest standards of
+          integrity, social responsibility, and environmental stewardship. By consistently exceeding expectations and
+          fostering enduring relationships, we aim to be the partner of choice for our customers, employees, and
+          stakeholders, driving positive change and sustainable growth in the steel industry and beyond.</p>
+
+      </div>
+      <div class="col-span-2">
+        <img src="./img/afif-ramdhasuma-RjqCk9MqhNg-unsplash.jpg" alt="" class="w-full">
+      </div>
+    </div>
+  </section>
+  <!-- Our Mission -->
+
+  <section class="qualifications p-12">
+    <h3 class="text-red font-bold">Our Qualifications</h3>
+    <h3 class="text-3xl ">Industry Accreditations and Certifications</h3>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact p-20">
+    <div class=" grid grid-cols-2 gap-5 px-15 items-center">
+      <div>
+        <h3 class="text-red font-bold">Contact Us</h3>
+        <h3 class="text-3xl ">Begin Your Journey with Chibiak Steel Link Limited</h3>
+        
+        <p class="my-3">We're here to answer any questions you may have and to assist you in any way we can. Whether you're interested in learning more about our company, have inquiries about our products and services, or want to explore partnership opportunities, we're just a message away. Feel free to reach out to us using the form below, and one of our knowledgeable representatives will get back to you promptly.</p>
+
+        <p class="my-3">Additionally, if you prefer to speak with us directly, you can reach our team via phone or email. We value open communication and are committed to providing exceptional customer service, so don't hesitate to contact us. We look forward to hearing from you and to the opportunity to collaborate and support you in achieving your goals.</p>
+      </div>
+      <div class="col-start-2 col-end-3">
+        <form action="" class="w-full">
+          <label for="name-label" class="block">Name:</label>
+          <input type="text" name="name" id="name-label"
+            class="block w-full border-skyblue border-solid border-2 focus:border-4 rounded-md p-2 outline-none">
+
+          <label for="email-label" class="block mt-2">Email:</label>
+          <input type="text" name="email" id="email-label"
+            class="block w-full border-skyblue border-solid border-2 rounded-md p-2 outline-none">
+
+          <label for="message-input" class="block mt-2">Message</label>
+          <textarea name="message" id="message-input"
+            class="block w-full border-skyblue border-solid border-2 rounded-md p-2 outline-none h-40 resize-none"></textarea>
+
+          <button type="submit" class="bg-darkblue text-white px-6 py-3 my-3 rounded-3xl">Send Message</button>
+
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- End of Contact Section -->
+
+  <footer class="bg-black text-white p-6 flex md:justify-between items-center text-white">
+    <img src="./img/logo.png" class="w-10 " alt="">
+    <div class="links flex items-center">
+      <a href="" class="bg-white p-1 mx-2 rounded-md">
+        <svg width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path fill="#0D0d0d"
+            d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47062 14 5.5 16 5.5H17.5V2.1401C17.1743 2.09685 15.943 2 14.6429 2C11.9284 2 10 3.65686 10 6.69971V9.5H7V13.5H10V22H14V13.5Z">
+          </path>
+        </svg>
+      </a>
+      <a href="" class="bg-white p-1 mx-2 rounded-md">
+        <svg width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path fill="#0d0d0d"
+            d="M12.001 9C10.3436 9 9.00098 10.3431 9.00098 12C9.00098 13.6573 10.3441 15 12.001 15C13.6583 15 15.001 13.6569 15.001 12C15.001 10.3427 13.6579 9 12.001 9ZM12.001 7C14.7614 7 17.001 9.2371 17.001 12C17.001 14.7605 14.7639 17 12.001 17C9.24051 17 7.00098 14.7629 7.00098 12C7.00098 9.23953 9.23808 7 12.001 7ZM18.501 6.74915C18.501 7.43926 17.9402 7.99917 17.251 7.99917C16.5609 7.99917 16.001 7.4384 16.001 6.74915C16.001 6.0599 16.5617 5.5 17.251 5.5C17.9393 5.49913 18.501 6.0599 18.501 6.74915ZM12.001 4C9.5265 4 9.12318 4.00655 7.97227 4.0578C7.18815 4.09461 6.66253 4.20007 6.17416 4.38967C5.74016 4.55799 5.42709 4.75898 5.09352 5.09255C4.75867 5.4274 4.55804 5.73963 4.3904 6.17383C4.20036 6.66332 4.09493 7.18811 4.05878 7.97115C4.00703 9.0752 4.00098 9.46105 4.00098 12C4.00098 14.4745 4.00753 14.8778 4.05877 16.0286C4.0956 16.8124 4.2012 17.3388 4.39034 17.826C4.5591 18.2606 4.7605 18.5744 5.09246 18.9064C5.42863 19.2421 5.74179 19.4434 6.17187 19.6094C6.66619 19.8005 7.19148 19.9061 7.97212 19.9422C9.07618 19.9939 9.46203 20 12.001 20C14.4755 20 14.8788 19.9934 16.0296 19.9422C16.8117 19.9055 17.3385 19.7996 17.827 19.6106C18.2604 19.4423 18.5752 19.2402 18.9074 18.9085C19.2436 18.5718 19.4445 18.2594 19.6107 17.8283C19.8013 17.3358 19.9071 16.8098 19.9432 16.0289C19.9949 14.9248 20.001 14.5389 20.001 12C20.001 9.52552 19.9944 9.12221 19.9432 7.97137C19.9064 7.18906 19.8005 6.66149 19.6113 6.17318C19.4434 5.74038 19.2417 5.42635 18.9084 5.09255C18.573 4.75715 18.2616 4.55693 17.8271 4.38942C17.338 4.19954 16.8124 4.09396 16.0298 4.05781C14.9258 4.00605 14.5399 4 12.001 4ZM12.001 2C14.7176 2 15.0568 2.01 16.1235 2.06C17.1876 2.10917 17.9135 2.2775 18.551 2.525C19.2101 2.77917 19.7668 3.1225 20.3226 3.67833C20.8776 4.23417 21.221 4.7925 21.476 5.45C21.7226 6.08667 21.891 6.81333 21.941 7.8775C21.9885 8.94417 22.001 9.28333 22.001 12C22.001 14.7167 21.991 15.0558 21.941 16.1225C21.8918 17.1867 21.7226 17.9125 21.476 18.55C21.2218 19.2092 20.8776 19.7658 20.3226 20.3217C19.7668 20.8767 19.2076 21.22 18.551 21.475C17.9135 21.7217 17.1876 21.89 16.1235 21.94C15.0568 21.9875 14.7176 22 12.001 22C9.28431 22 8.94514 21.99 7.87848 21.94C6.81431 21.8908 6.08931 21.7217 5.45098 21.475C4.79264 21.2208 4.23514 20.8767 3.67931 20.3217C3.12348 19.7658 2.78098 19.2067 2.52598 18.55C2.27848 17.9125 2.11098 17.1867 2.06098 16.1225C2.01348 15.0558 2.00098 14.7167 2.00098 12C2.00098 9.28333 2.01098 8.94417 2.06098 7.8775C2.11014 6.8125 2.27848 6.0875 2.52598 5.45C2.78014 4.79167 3.12348 4.23417 3.67931 3.67833C4.23514 3.1225 4.79348 2.78 5.45098 2.525C6.08848 2.2775 6.81348 2.11 7.87848 2.06C8.94514 2.0125 9.28431 2 12.001 2Z">
+          </path>
+        </svg>
+      </a>
+      <a href="" class="bg-white p-1 mx-2 rounded-md">
+        <svg width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path fill="#0d0d0d"
+            d="M8 2H1L9.26086 13.0145L1.44995 21.9999H4.09998L10.4883 14.651L16 22H23L14.3917 10.5223L21.8001 2H19.1501L13.1643 8.88578L8 2ZM17 20L5 4H7L19 20H17Z">
+          </path>
+        </svg>
+      </a>
+      <a href="" class="bg-white p-1 mx-2 rounded-md">
+        <svg width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path fill="#0d0d0d"
+            d="M6.94048 4.99993C6.94011 5.81424 6.44608 6.54702 5.69134 6.85273C4.9366 7.15845 4.07187 6.97605 3.5049 6.39155C2.93793 5.80704 2.78195 4.93715 3.1105 4.19207C3.43906 3.44699 4.18654 2.9755 5.00048 2.99993C6.08155 3.03238 6.94097 3.91837 6.94048 4.99993ZM7.00048 8.47993H3.00048V20.9999H7.00048V8.47993ZM13.3205 8.47993H9.34048V20.9999H13.2805V14.4299C13.2805 10.7699 18.0505 10.4299 18.0505 14.4299V20.9999H22.0005V13.0699C22.0005 6.89993 14.9405 7.12993 13.2805 10.1599L13.3205 8.47993Z">
+          </path>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
 </body>
+
 </html>

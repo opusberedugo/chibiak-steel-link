@@ -23,4 +23,69 @@ section.wcu li {
   padding-left: 25px;
 }
 
+section.values .top-left-accent {
+  position: relative;
+  padding: 2px;
+}
+section.values .top-left-accent::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  border-left: 3px solid #05DBF2;
+  border-top: 3px solid #05DBF2;
+  border-radius: 0.5rem;
+  z-index: -1;
+}
+section.values .top-right-accent {
+  position: relative;
+  padding: 2px;
+}
+section.values .top-right-accent::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  border-right: 3px solid #05DBF2;
+  border-top: 3px solid #05DBF2;
+  border-radius: 0.5rem;
+  z-index: -1;
+}
+section.values .bottom-right-accent {
+  position: relative;
+  padding: 2px;
+}
+section.values .bottom-right-accent::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  border-right: 3px solid #05DBF2;
+  border-bottom: 3px solid #05DBF2;
+  border-radius: 0.5rem;
+  z-index: -1;
+}
+section.values .bottom-left-accent {
+  position: relative;
+  padding: 2px;
+}
+section.values .bottom-left-accent::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  border-left: 3px solid #05DBF2;
+  border-bottom: 3px solid #05DBF2;
+  border-radius: 0.5rem;
+  z-index: -1;
+}
+
 /*# sourceMappingURL=main.css.map */
