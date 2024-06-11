@@ -39,6 +39,11 @@ section.values .top-left-accent::before {
   border-radius: 0.5rem;
   z-index: -1;
 }
+@media (max-width: 1023px) {
+  section.values .top-left-accent::before {
+    display: none;
+  }
+}
 section.values .top-right-accent {
   position: relative;
   padding: 2px;
@@ -55,9 +60,19 @@ section.values .top-right-accent::before {
   border-radius: 0.5rem;
   z-index: -1;
 }
+@media (max-width: 1023px) {
+  section.values .top-right-accent::before {
+    display: none;
+  }
+}
 section.values .bottom-right-accent {
   position: relative;
   padding: 2px;
+}
+@media (max-width: 1023) {
+  section.values .bottom-right-accent {
+    display: none;
+  }
 }
 section.values .bottom-right-accent::after {
   content: "";
@@ -70,6 +85,11 @@ section.values .bottom-right-accent::after {
   border-bottom: 3px solid #05DBF2;
   border-radius: 0.5rem;
   z-index: -1;
+}
+@media (max-width: 1023px) {
+  section.values .bottom-right-accent::after {
+    display: none;
+  }
 }
 section.values .bottom-left-accent {
   position: relative;
@@ -86,6 +106,15 @@ section.values .bottom-left-accent::after {
   border-bottom: 3px solid #05DBF2;
   border-radius: 0.5rem;
   z-index: -1;
+}
+@media (max-width: 1023px) {
+  section.values .bottom-left-accent::after {
+    display: none;
+  }
+}
+
+section.services .grid {
+  background-color: 218;
 }
 
 /*# sourceMappingURL=main.css.map */

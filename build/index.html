@@ -13,36 +13,40 @@
 <body>
 
   <!-- Nav Bar -->
-  <nav class="lg:flex lg:items-center lg:bg-white lg:shadow-md lg:justify-between lg:px-6">
-    <div class="brand sm:flex sm:justify-between sm:items-center sm:p-4 sm:shadow-sm lg:block lg:bg-transparent">
+  <nav class=" bg-white shadow-md justify-between px-6 md:flex md:items-center">
+    <div class="brand flex justify-between items-center p-4 shadow-sm md:block">
       <a href="./index.html" class="logo block">
         <img src="./img/logo.png" class="block w-12" alt="" srcset="">
       </a>
-      <button title="menu" href="" class="bg-darkblue p-2 rounded-md lg:hidden">
+      <button title="menu" href="" class="bg-darkblue p-2 rounded-md md:hidden nav-menu-button" >
         <svg xmlns="http://www.w3.org/2000/svg" width="25" viewBox="0 0 24 24" fill="currentColor">
           <path fill="#ffffff" d="M18 18V20H6V18H18ZM21 11V13H3V11H21ZM18 4V6H6V4H18Z"></path>
         </svg>
       </button>
     </div>
 
-    <div class="options sm:hidden lg:flex">
-      <a href="./" class="sm:block sm:p-4 sm:hover:bg-darkblue  ">Home</a>
-      <a href="./about.html" class="sm:block sm:p-4 sm:hover:bg-darkblue ">About</a>
-      <a href="#" class="sm:block sm:p-4 sm:hover:bg-darkblue ">Services</a>
-      <a href="#" class="sm:block sm:p-4 sm:hover:bg-darkblue ">Gallery</a>
-      <a href="#" class="sm:block sm:p-4 sm:hover:bg-darkblue ">Contact</a>
+    <div class="options hidden md:flex">
+      <a href="./" class="block p-4 hover:bg-darkblue hover:text-white">Home</a>
+      <a href="./about.html" class="block p-4 hover:bg-darkblue hover:text-white">About</a>
+      <!-- <a href="#" class="sm:block sm:p-4 sm:hover:bg-darkblue ">Services</a> -->
+      <a href="#" class="block p-4 hover:bg-darkblue hover:text-white">Gallery</a>
+      <a href="./contact.html" class="block p-4 hover:bg-darkblue hover:text-white">Contact</a>
     </div>
   </nav>
   <!-- End of Nav Bar -->
 
+
   <!-- Hero Section -->
-  <section class="hero grid p-9 py-20 grid-cols-4 text-white">
+  <section class="hero grid p-9 py-20 lg:grid-cols-4 sm:grid-cols-1  text-white">
     <div class="container p-6 py-8 col-start-1 col-end-4">
-      <h1 class="text-5xl py-6 font-semibold">Empowering Tomorrow <br> with Steel Excellence</h1>
-      <p class="py-6">Welcome to Chibiak Steel Link Limited, your premier destination for high-quality steel products
-        and solutions. With a steadfast commitment to excellence and innovation, we deliver reliable steel solutions
-        tailored to meet your needs. From construction to infrastructure, manufacturing to fabrication, trust Chibiak
-        Steel Link Limited to be your steadfast partner in building a stronger, more resilient future.</p>
+      <h1 class="text-5xl py-6 font-semibold">Your Premier Destination for Quality Steel Supply and Expert Pipe Fitting
+        Services</h1>
+      <p class="py-6">At Chibiak Steel Link Limited, we're more than just a steel supplier - we're your trusted partner
+        in success. With a steadfast commitment to excellence and a passion for precision, we specialize in sourcing
+        top-quality steel products and delivering expert pipe fitting solutions tailored to your unique needs. Whether
+        you're embarking on a large-scale construction project or a specialized industrial endeavor, count on us to
+        provide the expertise, reliability, and personalized service you deserve. Welcome to a world of unparalleled
+        quality and service – welcome to Chibiak Steel Link Limited.</p>
 
       <a href="#"
         class="bg-white text-darkblue p-5 rounded-full block w-fit my-3 px-6 font-semibold hover:scale-105">Get
@@ -51,9 +55,8 @@
   </section>
   <!-- End of Hero Section -->
 
-  <div class="bg-white pb-24 sm:pb-24">
+  <!-- <div class="bg-white pb-24 sm:pb-24">
     <div class="mx-auto max-w-7xl px-6 lg:px-4 ">
-      <!-- <h2 class="text-center text-lg font-semibold leading-8 text-gray-900">Trusted by the world’s most nnovative teams</h2> -->
       <div
         class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
         <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
@@ -68,10 +71,10 @@
           src="./img/exxonmobillogocolor2x.png" alt="Statamic" width="158" height="48">
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!-- Services Section -->
-  <section class="services lg:px-20 py-6">
+  <section class="services lg:px-20 md:px-10 sm:px-3 py-12 ">
     <div class="">
       <h3 class="text-red font-bold">Service</h3>
       <h3 class="text-3xl ">Our Capabilities</h3>
@@ -81,22 +84,23 @@
     </div>
 
     <!-- Grid Box -->
-    <div class="grid items-center gap-5 sm:grid-cols-1 sm:px-6 lg:grid-cols-3 lg:items-center">
+    <div class="grid items-center gap-5 sm:grid-cols-1 sm:px-6 lg:grid-cols-3 md:grid-cols-2">
 
       <!-- Column Start -->
-      <div class="md:col-start-1 md:col-end-2 sm:col-start-1 sm:col-end-2">
+      <div class="col-span-1">
         <div class="card max-w-none mx-auto">
-          <div class="shadow rounded-lg bg-white overflow-hidden">
-            <div class="card-heder p-6">
+          <div class="shadow-lg rounded-lg bg-white overflow-hidden">
+            <div class="card-heder p-6 font-semibold">
               Steel Supply
             </div>
             <div class="card-image">
               <img src="./img/supply.png" class="w-full mb-3" alt="">
             </div>
             <div class="card-body p-6 pt-0">
-              Chibiak Steel Link Limited offers comprehensive steel supply solutions, ensuring consistency and
-              reliability from sourcing to delivery. With a focus on quality control, we guarantee that every product
-              meets industry standards, providing strength and durability for your projects.
+              Chibiak Steel Link Limited offers a comprehensive range of steel supply solutions to meet diverse industry
+              needs. We source high-quality steel products and ensure their timely delivery to your site. Our commitment
+              to quality control guarantees that every steel product meet industry standards, providing strength and
+              reliability for all your projects.
             </div>
           </div>
         </div>
@@ -105,19 +109,41 @@
 
 
       <!-- Column Start -->
-      <div class="md:col-start-2 md:col-end-3 sm:col-start-1 sm:col-end-2">
+      <div class="col-span-1">
         <div class="card max-w-none mx-auto">
           <div class="shadow-lg rounded-lg bg-white overflow-hidden">
-            <div class="card-heder p-6">
-              Custom Fabrication
+            <div class="card-heder p-6 font-semibold">
+              Line Pipes
+            </div>
+            <div class="card-image">
+              <img src="./img/ries-bosch-RYcEnw4z37k-unsplash.jpg" class="w-full mb-3" alt="">
+            </div>
+            <div class="card-body p-6 pt-0">
+              Our line pipes are designed to meet the highest standards of durability and efficiency. Chibiak Steel Link
+              Limited ensures that every pipe is crafted from premium materials, offering exceptional performance and
+              longevity. Our extensive inventory and logistical expertise enable us to deliver line pipes that perfectly
+              match your project specifications and timelines.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Column End -->
+
+      <!-- Column Start -->
+      <div class="col-span-1">
+        <div class="card max-w-none mx-auto">
+          <div class="shadow-lg rounded-lg bg-white overflow-hidden">
+            <div class="card-heder p-6 font-semibold">
+              Pipe Fitting
             </div>
             <div class="card-image">
               <img src="./img/fabrication.png" class="w-full mb-3" alt="">
             </div>
             <div class="card-body p-6 pt-0">
-              Our custom fabrication services combine cutting-edge technology with skilled craftsmanship to deliver
-              precise and flexible solutions. From design to assembly, we bring your vision to life with attention to
-              detail, exceeding expectations and staying within budget.
+              At Chibiak Steel Link Limited, we specialize in providing expert pipe fitting services tailored to various
+              industrial and commercial applications. Our skilled team ensures precise installation and assembly of
+              piping systems, adhering to the highest safety and quality standards. Whether it's welding, threading, or
+              flange installation, we deliver seamless and reliable pipe fitting solutions.
             </div>
           </div>
         </div>
@@ -125,20 +151,65 @@
       <!-- Column End -->
 
       <!-- Column Start -->
-      <div class="md:col-start-3 md:col-end-4 sm:col-start-1 sm:col-end-2">
+      <div class="col-span-1">
         <div class="card max-w-none mx-auto">
           <div class="shadow-lg rounded-lg bg-white overflow-hidden">
-            <div class="card-heder p-6">
-              Consultation / Project Management
+            <div class="card-heder p-6 font-semibold">
+              Procurement/Management Consultation
             </div>
             <div class="card-image">
               <img src="./img/consultation.png" class="w-full mb-3" alt="">
             </div>
 
             <div class="card-body p-6 pt-0 ">
-              Partner with us for expert consultation and project management services, tailored to streamline your
-              project's lifecycle. With industry knowledge and proactive problem-solving, we guide you from feasibility
-              studies to construction oversight, ensuring success at every stage.
+              We offer comprehensive procurement and management consultation services to streamline your projects and
+              enhance efficiency. Our experienced consultants provide guidance on supplier selection, cost optimization,
+              and project planning. Chibiak Steel Link Limited is dedicated to helping you achieve excellent and
+              cost-effective solutions across all stages of your project.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Column End -->
+
+      <!-- Column Start -->
+      <div class="col-span-1 ">
+        <div class="card max-w-none mx-auto">
+          <div class="shadow-lg rounded-lg bg-white overflow-hidden">
+            <div class="card-heder p-6 font-semibold">
+              Structural Material Supply
+            </div>
+            <div class="card-image">
+              <img src="./img/andy-li-CpsTAUPoScw-unsplash.jpg" class="w-full mb-3" alt="">
+            </div>
+
+            <div class="card-body p-6 pt-0 ">
+              Chibiak Steel Link Limited supplies a wide array of structural materials essential for construction and
+              infrastructure projects. From beams to columns and everything in between, we ensure that all materials
+              meet rigorous quality standards. Our reliable supply chain and extensive inventory enable us to provide
+              the structural materials you need to build with confidence and precision.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Column End -->
+
+      <!-- Column Start -->
+      <div class="col-span-1">
+        <div class="card max-w-none mx-auto">
+          <div class="shadow-lg rounded-lg bg-white overflow-hidden">
+            <div class="card-heder p-6 font-semibold">
+              Material Warehousing
+            </div>
+            <div class="card-image">
+              <img src="./img/timelab-CfKV0CecnU8-unsplash.jpg" class="w-full mb-3" alt="">
+            </div>
+
+            <div class="card-body p-6 pt-0 ">
+              Our material warehousing services offer secure and efficient storage solutions for all your project
+              materials. Chibiak Steel Link Limited provides state-of-the-art facilities to ensure the safe handling and
+              storage of your inventory. With our effective inventory management and strategic location, we help you
+              streamline your supply chain and ensure timely availability of materials when needed.
             </div>
           </div>
         </div>
@@ -151,10 +222,10 @@
   <!-- End of Service Section -->
 
   <!-- Why Us -->
-  <section class="wcu bg-darkblue grid grid-cols-3 text-white items-center">
-    <div class="col-span-1">
+  <section class="wcu bg-darkblue grid grid-cols-1 text-white items-center">
+    <!-- <div class="col-span-1">
       <img src="./img/Default_satisfied_dark_skin_female_welder_smiling_and_holding_0.jpg" class="w-full" alt="">
-    </div>
+    </div> -->
     <div class="col-span-2 p-9">
       <h3 class="text-red uppercase font-medium">Why Choose Us</h3>
       <p class="text-3xl font-semibold">Discover Why Chibiak Steel Link Limited is Your Premier Choice</p>
@@ -169,78 +240,80 @@
   </section>
   <!--End of  Why Us -->
 
-  <!-- Projects Section -->
-  <section class="projects p-20 ">
+  <div id="region">
+    <!-- Products Section -->
+    <!-- <section class="products p-20 "> -->
     <!-- Grid Box -->
-    <div class="grid grid-cols-3 items-center gap-5">
-      <!-- Grid Column -->
-      <div class="col-span-1">
-        <h3 class="text-red font-bold">Projects</h3>
+    <!-- <div class="grid grid-cols-3 items-center gap-5"> -->
+    <!-- Grid Column -->
+    <!-- <div class="col-span-1">
+        <h3 class="text-red font-bold">Products</h3>
         <h3 class="text-3xl ">Selected Works <br> From Us</h3>
         <p class="my-3"></p>
-      </div>
-      <!-- End of Grid Column -->
+      </div> -->
+    <!-- End of Grid Column -->
 
-      <!-- Grid Column -->
-      <div class="col-span-1 ">
+    <!-- Grid Column -->
+    <!-- <div class="col-span-1 ">
         <div class="container w-full box-border">
           <img src="./img/placeholder.png" class="w-full" alt="" srcset="">
           <a href="" class="font-medium cursor-pointer">Project Name</a>
-        </div>
+        </div> -->
 
-      </div>
-      <!-- End of  Grid Column -->
+    <!-- </div> -->
+    <!-- End of  Grid Column -->
 
-      <!-- Grid Column -->
-      <div class="col-span-1 ">
+    <!-- Grid Column -->
+    <!-- <div class="col-span-1 ">
         <div class="container w-full box-border">
           <img src="./img/placeholder.png" class="w-full" alt="" srcset="">
         </div>
         <a href="" class="font-medium cursor-pointer">Project Name</a>
-      </div>
-      <!-- End of  Grid Column -->
+      </div> -->
+    <!-- End of  Grid Column -->
 
-      <!-- Grid Column -->
-      <div class="col-span-1 ">
+    <!-- Grid Column -->
+    <!-- <div class="col-span-1 ">
         <div class="container w-full box-border">
           <img src="./img/placeholder.png" class="w-full" alt="" srcset="">
         </div>
         <a href="" class="font-medium cursor-pointer">Project Name</a>
-      </div>
-      <!-- End of  Grid Column -->
+      </div> -->
+    <!-- End of  Grid Column -->
 
-      <!-- Grid Column -->
-      <div class="col-span-1 ">
+    <!-- Grid Column -->
+    <!-- <div class="col-span-1 ">
         <div class="container w-full box-border">
           <img src="./img/placeholder.png" class="w-full" alt="" srcset="">
         </div>
         <a href="" class="font-medium cursor-pointer">Project Name</a>
-      </div>
-      <!-- End of  Grid Column -->
+      </div> -->
+    <!-- End of  Grid Column -->
 
-      <!-- Grid Column -->
-      <div class="col-span-1">
-        <h3 class="text-red font-bold">Projects</h3>
+    <!-- Grid Column -->
+    <!-- <div class="col-span-1">
+        <h3 class="text-red font-bold">Product</h3>
         <h3 class="text-3xl ">Selected Works <br> From Us</h3>
         <p class="my-3"></p>
-      </div>
-      <!-- End of Grid Column -->
+      </div> -->
+    <!-- End of Grid Column -->
 
-    </div>
+    <!-- </div> -->
     <!-- End of Grid box -->
-  </section>
-  <!-- End of Projects Section -->
-
+    <!-- </section> -->
+    <!-- End of Products Section -->
+  </div>
 
   <!-- Contact -->
   <section class="contact p-20">
-    <div class=" grid grid-cols-2 gap-5 px-15 items-center">
-      <div>
+    <div class=" grid lg:grid-cols-2 sm:grid-cols-1 gap-5 px-15 items-center">
+      <div class="col-span-1">
         <h3 class="text-red font-bold">Contact Us</h3>
         <h3 class="text-3xl ">Let's Connect and Build Together</h3>
-        <p class="my-3">Ready to take the next step in your project? Drop us a message using the form below. Our dedicated team is eager to hear from you and provide personalized solutions tailored to your needs.</p>
+        <p class="my-3">Ready to take the next step in your project? Drop us a message using the form below. Our
+          dedicated team is eager to hear from you and provide personalized solutions tailored to your needs.</p>
       </div>
-      <div class="col-start-2 col-end-3">
+      <div class="col-span-1">
         <form action="" class="w-full">
           <label for="name-label" class="block">Name:</label>
           <input type="text" name="name" id="name-label"
@@ -262,9 +335,23 @@
   </section>
   <!-- End of Contact Section -->
 
-  <footer class="bg-black text-white p-6 flex md:justify-between items-center text-white">
-    <img src="./img/logo.png" class="w-10 " alt="">
+  <footer class="bg-black text-white p-6 flex md:justify-between items-center sm:flex-col md:flex-row">
+    <div class="flex md:justify-between items-center sm:flex-col md:flex-row">
+      <img src="./img/logo.png" class="w-10 block" alt="">
+      <address class="block not-italic md:px-2 sm:my-2">K/M 17 PH/Aba Express Road, Port Harcourt, Rivers State,
+        Nigeria.
+      </address>
+    </div>
     <div class="links flex items-center">
+      <a href="tel:+234840797057" class="bg-white p-1 mx-2 rounded-md">
+        <svg width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path fill="#0D0d0d"
+            d="M21 16.42V19.9561C21 20.4811 20.5941 20.9167 20.0705 20.9537C19.6331 20.9846 19.2763 21 19 21C10.1634 21 3 13.8366 3 5C3 4.72371 3.01545 4.36687 3.04635 3.9295C3.08337 3.40588 3.51894 3 4.04386 3H7.5801C7.83678 3 8.05176 3.19442 8.07753 3.4498C8.10067 3.67907 8.12218 3.86314 8.14207 4.00202C8.34435 5.41472 8.75753 6.75936 9.3487 8.00303C9.44359 8.20265 9.38171 8.44159 9.20185 8.57006L7.04355 10.1118C8.35752 13.1811 10.8189 15.6425 13.8882 16.9565L15.4271 14.8019C15.5572 14.6199 15.799 14.5573 16.001 14.6532C17.2446 15.2439 18.5891 15.6566 20.0016 15.8584C20.1396 15.8782 20.3225 15.8995 20.5502 15.9225C20.8056 15.9483 21 16.1633 21 16.42Z">
+
+          </path>
+        </svg>
+      </a>
+
       <a href="" class="bg-white p-1 mx-2 rounded-md">
         <svg width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
           <path fill="#0D0d0d"
@@ -295,6 +382,14 @@
       </a>
     </div>
   </footer>
+  <script>
+    let menuButton = document.querySelector(".nav-menu-button");
+    let menuOptions = document.querySelector("nav .options");
+  
+    menuButton.addEventListener("click", (e)=>{
+      menuOptions.classList.toggle("hidden");
+    })
+  </script>
 </body>
 
 </html>

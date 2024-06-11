@@ -13,30 +13,30 @@
 <body>
 
   <!-- Nav Bar -->
-  <nav class="lg:flex lg:items-center lg:bg-white lg:shadow-md lg:justify-between lg:px-6">
-    <div class="brand sm:flex sm:justify-between sm:items-center sm:p-4 sm:shadow-sm lg:block lg:bg-transparent">
+  <nav class=" bg-white shadow-md justify-between px-6 md:flex md:items-center">
+    <div class="brand flex justify-between items-center p-4 shadow-sm md:block">
       <a href="./index.html" class="logo block">
         <img src="./img/logo.png" class="block w-12" alt="" srcset="">
       </a>
-      <button title="menu" href="" class="bg-darkblue p-2 rounded-md lg:hidden">
+      <button title="menu" href="" class="bg-darkblue p-2 rounded-md md:hidden nav-menu-button" >
         <svg xmlns="http://www.w3.org/2000/svg" width="25" viewBox="0 0 24 24" fill="currentColor">
           <path fill="#ffffff" d="M18 18V20H6V18H18ZM21 11V13H3V11H21ZM18 4V6H6V4H18Z"></path>
         </svg>
       </button>
     </div>
 
-    <div class="options sm:hidden lg:flex">
-      <a href="./" class="sm:block sm:p-4 sm:hover:bg-darkblue  ">Home</a>
-      <a href="./about.html" class="sm:block sm:p-4 sm:hover:bg-darkblue ">About</a>
-      <a href="#" class="sm:block sm:p-4 sm:hover:bg-darkblue ">Services</a>
-      <a href="#" class="sm:block sm:p-4 sm:hover:bg-darkblue ">Gallery</a>
-      <a href="#" class="sm:block sm:p-4 sm:hover:bg-darkblue ">Contact</a>
+    <div class="options hidden md:flex">
+      <a href="./" class="block p-4 hover:bg-darkblue hover:text-white">Home</a>
+      <a href="./about.html" class="block p-4 hover:bg-darkblue hover:text-white">About</a>
+      <!-- <a href="#" class="sm:block sm:p-4 sm:hover:bg-darkblue ">Services</a> -->
+      <a href="#" class="block p-4 hover:bg-darkblue hover:text-white">Gallery</a>
+      <a href="./contact.html" class="block p-4 hover:bg-darkblue hover:text-white">Contact</a>
     </div>
   </nav>
   <!-- End of Nav Bar -->
 
   <!-- Hero Section -->
-  <section class="hero grid p-9 py-20 grid-cols-4 text-white">
+  <section class="hero grid p-9 py-20 lg:grid-cols-4 sm:grid-cols-1  text-white">
     <div class="container p-6 py-8 col-start-1 col-end-4">
       <h1 class="text-5xl py-6 font-semibold">Discover the Essence of <br /> Chibiak Steel Link Limited</h1>
       <p class="py-6">Welcome to Chibiak Steel Link Limited, where our story is a tapestry woven with passion,
@@ -53,7 +53,7 @@
   <!-- End of Hero Section -->
 
   <!-- Story Section -->
-  <section class="story lg:px-20 py-6">
+  <section class="story lg:px-20 md:px-10 sm:px-6 py-12">
     <div class="">
       <h3 class="text-red font-bold">Our Story</h3>
       <h3 class="text-3xl ">Origins of Innovation: Our Inspiring Journey</h3>
@@ -83,19 +83,71 @@
   </section>
   <!-- End of Story Section -->
 
+  <!-- Our Expertise Section -->
+  <div class="min-h-screen bg-gray-100 py-12">
+    <div class="container mx-auto px-4 md:px-8 lg:px-12">
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="p-6 text-center">
+          <h3 class="text-red font-bold">Our Specialty</h3>
+          <h3 class="text-3xl ">What we do</h3>
+          <!-- <p class="mb-8 text-gray-700">At Chibiak Steel Link Limited, we leverage our extensive industry experience and
+            specialized knowledge to deliver exceptional results in steel supply, pipe fitting, and project management.
+            Explore our key areas of expertise below.</p> -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Expertise 1: Steel Supply -->
+            <div class="p-6  rounded-lg shadow-md">
+              <h3 class="text-xl font-semibold mb-4">Steel Supply</h3>
+              <p>Providing a consistent and reliable steel supply chain, ensuring high-quality materials for various
+                industries.</p>
+            </div>
+            <!-- Expertise 2: Pipe Fitting -->
+            <div class="p-6 rounded-lg shadow-md">
+              <h3 class="text-xl font-semibold mb-4">Pipe Fitting</h3>
+              <p>Specializing in precise pipe fitting services that meet industry standards and enhance project
+                efficiency.</p>
+            </div>
+            <!-- Expertise 3: Procurement & Management Consultation -->
+            <div class="p-6  rounded-lg shadow-md">
+              <h3 class="text-xl font-semibold mb-4">Procurement & Management Consultation</h3>
+              <p>Offering expert procurement and management consultation to optimize project planning and execution.</p>
+            </div>
+            <!-- Expertise 4: Structural Material Supply -->
+            <div class="p-6  rounded-lg shadow-md">
+              <h3 class="text-xl font-semibold mb-4">Structural Material Supply</h3>
+              <p>Supplying top-grade structural materials tailored to the specific needs of your construction projects.
+              </p>
+            </div>
+            <!-- Expertise 5: Material Warehousing -->
+            <div class="p-6 rounded-lg shadow-md">
+              <h3 class="text-xl font-semibold mb-4">Material Warehousing</h3>
+              <p>Efficient material warehousing solutions to ensure timely availability and secure storage of your
+                supplies.</p>
+            </div>
+            <!-- Expertise 6: Line Pipes -->
+            <div class="p-6  rounded-lg shadow-md">
+              <h3 class="text-xl font-semibold mb-4">Line Pipes</h3>
+              <p>Delivering high-quality line pipes suitable for a variety of applications in the oil and gas industry.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Values Section -->
-  <section class="values lg:px-20 py-6">
+  <section class="values lg:px-20 md:px-10 sm:px-6 py-12">
     <h3 class="text-red font-bold">Our Values and Philosophy</h3>
     <h3 class="text-3xl ">Guiding Principles: Our Commitment to Excellence and Sustainability</h3>
 
     <!-- Grid -->
-    <div class="grid grid-cols-3 items-center justify-center gap-5">
+    <div class="grid lg:grid-cols-3 sm:grid-cols-1 items-center justify-center gap-5">
       <!-- Grid Column -->
       <div class="col-span-1 ">
         <!-- Card -->
         <div class="card max-w-none mx-auto my-6 bottom-right-accent">
           <div class="shadow-lg rounded-lg bg-white overflow-hidden">
-            <div class="card-heder p-6">
+            <div class="card-heder p-6 font-semibold">
               Excellence
             </div>
             <div class="card-body p-6 pt-0">
@@ -112,7 +164,7 @@
         <!-- Card -->
         <div class="card max-w-none mx-auto my-6 top-right-accent">
           <div class="shadow-lg rounded-lg bg-white overflow-hidden ">
-            <div class="card-heder p-6">
+            <div class="card-heder p-6 font-semibold">
               Integrity
             </div>
             <div class="card-body p-6 pt-0">
@@ -132,7 +184,7 @@
       <div class="col-span-1 ">
         <div class="card max-w-none mx-auto top-left-accent bottom-right-accent">
           <div class="shadow-lg rounded-lg bg-white overflow-hidden">
-            <div class="card-heder p-6">
+            <div class="card-heder p-6 font-semibold">
               Customer-Centricity
             </div>
             <div class="card-body p-6 pt-0">
@@ -153,7 +205,7 @@
         <!-- Card -->
         <div class="card max-w-none mx-auto my-6 bottom-left-accent">
           <div class="shadow-lg rounded-lg bg-white overflow-hidden ">
-            <div class="card-heder p-6">
+            <div class="card-heder p-6 font-semibold">
               Sustainability
             </div>
             <div class="card-body p-6 pt-0">
@@ -171,7 +223,7 @@
         <!-- Card -->
         <div class="card max-w-none mx-auto my-6 top-left-accent">
           <div class="shadow-lg rounded-lg bg-white overflow-hidden">
-            <div class="card-heder p-6">
+            <div class="card-heder p-6 font-semibold">
               Innovation
             </div>
             <div class="card-body p-6 pt-0">
@@ -193,9 +245,9 @@
   <!-- End of  Values Section -->
 
   <!-- Our Vision -->
-  <section class="vision items-center my-12">
-    <div class="grid grid-cols-3 items-center">
-      <div class="col-span-1">
+  <section class="vision items-center my-12 ">
+    <div class="grid lg:grid-cols-3 items-center sm:grid-cols-1 justify-center gap-5">
+      <div class="col-span-1 sm:hidden lg:block">
         <img src="./img/serhat-beyazkaya-ayWgRkCk2sQ-unsplash.jpg" alt="" class="w-full">
       </div>
 
@@ -203,12 +255,11 @@
         <h3 class="text-red font-bold">Our Vision</h3>
         <h3 class="text-3xl ">The Future we Picture</h3>
 
-        <p>Our vision at Chibiak Steel Link Limited is to redefine the boundaries of possibility in the steel industry,
-          setting new standards of excellence and innovation. We envision a future where steel is not just a commodity
-          but a catalyst for transformative change, powering the infrastructure, construction, and manufacturing sectors
-          with strength, durability, and sustainability. Through continuous innovation, strategic partnerships, and a
-          relentless commitment to customer success, we aspire to be at the forefront of industry advancements, driving
-          progress and prosperity for generations to come.</p>
+        <p>Catering to a diverse array of needs, our specialized engineering, procurement, and management consulting
+          services are designed to surpass expectations at every turn. With a commitment to excellence and efficiency
+          ingrained in our ethos, we aim to emerge as the go-to partner for clients seeking unparalleled support
+          throughout the project life cycle. From meticulous planning to seamless execution, trust us to elevate your
+          endeavors with expertise and dedication.</p>
 
       </div>
 
@@ -218,43 +269,44 @@
 
   <!-- Our Mission -->
   <section class="mission items-center my-12">
-    <div class="grid grid-cols-5 items-center">
-      <div class="col-span-3 px-12">
+    <div class="grid lg:grid-cols-3 items-center sm:grid-cols-1 justify-center gap-5">
+      <div class="col-span-2 px-12">
         <h3 class="text-red font-bold">Our Mission</h3>
         <h3 class="text-3xl ">What we aim for</h3>
 
-        <p>At Chibiak Steel Link Limited, our mission is to be the leading provider of innovative and sustainable steel
-          solutions, empowering our customers to build a better future. We are dedicated to delivering exceptional value
-          through excellence in products, services, and customer experiences, while upholding the highest standards of
-          integrity, social responsibility, and environmental stewardship. By consistently exceeding expectations and
-          fostering enduring relationships, we aim to be the partner of choice for our customers, employees, and
-          stakeholders, driving positive change and sustainable growth in the steel industry and beyond.</p>
+        <p>Our mission is simple: provide excellent service in every aspect of our work, following industry standards
+          and maintaining integrity. We aim to develop our team and be a leading provider in the built environment,
+          prioritizing our valued clients. Additionally, we're dedicated to responsibly building and managing energy
+          resources worldwide, using quality materials and professionalism for cost-effective solutions.</p>
 
       </div>
-      <div class="col-span-2">
+      <div class="col-span-1 sm:hidden lg:block">
         <img src="./img/afif-ramdhasuma-RjqCk9MqhNg-unsplash.jpg" alt="" class="w-full">
       </div>
     </div>
   </section>
   <!-- Our Mission -->
 
-  <section class="qualifications p-12">
-    <h3 class="text-red font-bold">Our Qualifications</h3>
-    <h3 class="text-3xl ">Industry Accreditations and Certifications</h3>
-  </section>
+
 
   <!-- Contact -->
-  <section class="contact p-20">
-    <div class=" grid grid-cols-2 gap-5 px-15 items-center">
-      <div>
+  <section class="contact lg:px-20 md:px-10 sm:px-6 py-12">
+    <div class=" grid lg:grid-cols-2 sm:grid-cols-1 gap-5 px-15 items-center">
+      <div class="col-span-1">
         <h3 class="text-red font-bold">Contact Us</h3>
         <h3 class="text-3xl ">Begin Your Journey with Chibiak Steel Link Limited</h3>
-        
-        <p class="my-3">We're here to answer any questions you may have and to assist you in any way we can. Whether you're interested in learning more about our company, have inquiries about our products and services, or want to explore partnership opportunities, we're just a message away. Feel free to reach out to us using the form below, and one of our knowledgeable representatives will get back to you promptly.</p>
 
-        <p class="my-3">Additionally, if you prefer to speak with us directly, you can reach our team via phone or email. We value open communication and are committed to providing exceptional customer service, so don't hesitate to contact us. We look forward to hearing from you and to the opportunity to collaborate and support you in achieving your goals.</p>
+        <p class="my-3">We're here to answer any questions you may have and to assist you in any way we can. Whether
+          you're interested in learning more about our company, have inquiries about our products and services, or want
+          to explore partnership opportunities, we're just a message away. Feel free to reach out to us using the form
+          below, and one of our knowledgeable representatives will get back to you promptly.</p>
+
+        <p class="my-3">Additionally, if you prefer to speak with us directly, you can reach our team via phone or
+          email. We value open communication and are committed to providing exceptional customer service, so don't
+          hesitate to contact us. We look forward to hearing from you and to the opportunity to collaborate and support
+          you in achieving your goals.</p>
       </div>
-      <div class="col-start-2 col-end-3">
+      <div class="col-span-1">
         <form action="" class="w-full">
           <label for="name-label" class="block">Name:</label>
           <input type="text" name="name" id="name-label"
@@ -276,9 +328,23 @@
   </section>
   <!-- End of Contact Section -->
 
-  <footer class="bg-black text-white p-6 flex md:justify-between items-center text-white">
-    <img src="./img/logo.png" class="w-10 " alt="">
+  <footer class="bg-black text-white p-6 flex md:justify-between items-center sm:flex-col md:flex-row">
+    <div class="flex md:justify-between items-center sm:flex-col md:flex-row">
+      <img src="./img/logo.png" class="w-10 block" alt="">
+      <address class="block not-italic md:px-2 sm:my-2">K/M 17 PH/Aba Express Road, Port Harcourt, Rivers State,
+        Nigeria.
+      </address>
+    </div>
     <div class="links flex items-center">
+      <a href="tel:+234840797057" class="bg-white p-1 mx-2 rounded-md">
+        <svg width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path fill="#0D0d0d"
+            d="M21 16.42V19.9561C21 20.4811 20.5941 20.9167 20.0705 20.9537C19.6331 20.9846 19.2763 21 19 21C10.1634 21 3 13.8366 3 5C3 4.72371 3.01545 4.36687 3.04635 3.9295C3.08337 3.40588 3.51894 3 4.04386 3H7.5801C7.83678 3 8.05176 3.19442 8.07753 3.4498C8.10067 3.67907 8.12218 3.86314 8.14207 4.00202C8.34435 5.41472 8.75753 6.75936 9.3487 8.00303C9.44359 8.20265 9.38171 8.44159 9.20185 8.57006L7.04355 10.1118C8.35752 13.1811 10.8189 15.6425 13.8882 16.9565L15.4271 14.8019C15.5572 14.6199 15.799 14.5573 16.001 14.6532C17.2446 15.2439 18.5891 15.6566 20.0016 15.8584C20.1396 15.8782 20.3225 15.8995 20.5502 15.9225C20.8056 15.9483 21 16.1633 21 16.42Z">
+
+          </path>
+        </svg>
+      </a>
+
       <a href="" class="bg-white p-1 mx-2 rounded-md">
         <svg width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
           <path fill="#0D0d0d"
@@ -310,6 +376,14 @@
     </div>
   </footer>
 
+  <script>
+    let menuButton = document.querySelector(".nav-menu-button");
+    let menuOptions = document.querySelector("nav .options");
+  
+    menuButton.addEventListener("click", (e)=>{
+      menuOptions.classList.toggle("hidden");
+    })
+  </script>
 </body>
 
 </html>

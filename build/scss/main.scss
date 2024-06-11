@@ -1,11 +1,20 @@
-.text-white{
+@mixin media-max($width){
+  @media (max-width:$width) {
+    @content;
+  }
+}
+
+
+
+
+.text-white {
   color: white;
 }
 
-nav{
-  .options{
-    a{
-      &:hover{
+nav {
+  .options {
+    a {
+      &:hover {
         color: white;
         font-weight: 600;
       }
@@ -13,7 +22,7 @@ nav{
   }
 }
 
-section.hero{
+section.hero {
   background-image: linear-gradient(#033E8Ca8 75%, #05daf2a8), url("../img/ant-rozetsky-SLIFI67jv5k-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,89 +34,115 @@ section.hero{
 //   }
 // }
 
-section.wcu{
-  li{
-    list-style-image: url("../img/list-img.svg");list-style-position: inside;
+section.wcu {
+  li {
+    list-style-image: url("../img/list-img.svg");
+    list-style-position: inside;
     vertical-align: middle;
     line-height: 20px;
     list-style: none;
-    background: url(../img/list-img.svg) left center no-repeat; 
+    background: url(../img/list-img.svg) left center no-repeat;
     padding-left: 25px;
   }
 }
 
-section.values{
-  .top-left-accent{
+section.values {
+  .top-left-accent {
     position: relative;
     padding: 2px;
-    &::before{
+   
+
+    &::before {
       content: '';
       position: absolute;
       top: 0;
       left: 0;
       width: 50%;
       height: 50%;
-      border-left: 3px solid #05DBF2; 
-      border-top: 3px solid #05DBF2; 
+      border-left: 3px solid #05DBF2;
+      border-top: 3px solid #05DBF2;
       border-radius: .5rem;
       // background: linear-gradient(to bottom, #05DBF2, #05DBF2); 
-      z-index: -1
+      z-index: -1;
+      @include media-max(1023px){
+        display: none;
+      }
     }
   }
 
-  .top-right-accent{
+  .top-right-accent {
     position: relative;
     padding: 2px;
-    &::before{
+   
+    &::before {
       content: '';
       position: absolute;
       top: 0;
       right: 0;
       width: 50%;
       height: 50%;
-      border-right: 3px solid #05DBF2; 
-      border-top: 3px solid #05DBF2; 
+      border-right: 3px solid #05DBF2;
+      border-top: 3px solid #05DBF2;
       border-radius: .5rem;
       // background: linear-gradient(to bottom, #05DBF2, #05DBF2); 
-      z-index: -1
+      z-index: -1;
+      @include media-max(1023px){
+        display: none;
+      }
     }
   }
 
-
-
-  .bottom-right-accent{
+  .bottom-right-accent {
     position: relative;
     padding: 2px;
-    &::after{
+    @include media-max(1023){
+      display: none;
+    }
+
+    &::after {
       content: '';
       position: absolute;
       bottom: 0;
       right: 0;
       width: 50%;
       height: 50%;
-      border-right: 3px solid #05DBF2; 
-      border-bottom: 3px solid #05DBF2; 
+      border-right: 3px solid #05DBF2;
+      border-bottom: 3px solid #05DBF2;
       border-radius: .5rem;
       // background: linear-gradient(to bottom, #05DBF2, #05DBF2); 
-      z-index: -1
+      z-index: -1;
+      @include media-max(1023px){
+        display: none;
+      }
     }
   }
 
-  .bottom-left-accent{
+  .bottom-left-accent {
     position: relative;
     padding: 2px;
-    &::after{
+   
+
+    &::after {
       content: '';
       position: absolute;
       bottom: 0;
       left: 0;
       width: 50%;
       height: 50%;
-      border-left: 3px solid #05DBF2; 
-      border-bottom: 3px solid #05DBF2; 
+      border-left: 3px solid #05DBF2;
+      border-bottom: 3px solid #05DBF2;
       border-radius: .5rem;
       // background: linear-gradient(to bottom, #05DBF2, #05DBF2); 
-      z-index: -1
+      z-index: -1;
+      @include media-max(1023px){
+        display: none;
+      }
     }
+  }
+}
+
+section.services{
+  .grid{
+    background-color: green($color: #05daf2a8);
   }
 }
