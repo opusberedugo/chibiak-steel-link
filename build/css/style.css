@@ -898,12 +898,6 @@ video {
   row-gap: 4rem;
 }
 
-.space-x-4 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1rem * var(--tw-space-x-reverse));
-  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1237,6 +1231,11 @@ video {
 .hover\:bg-darkblue:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(3 62 140 / var(--tw-bg-opacity));
+}
+
+.hover\:text-darkblue:hover {
+  --tw-text-opacity: 1;
+  color: rgb(3 62 140 / var(--tw-text-opacity));
 }
 
 .hover\:text-white:hover {
