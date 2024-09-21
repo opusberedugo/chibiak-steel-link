@@ -6,70 +6,44 @@ menuButton.addEventListener("click", (e)=>{
 })
 
 
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-  event.preventDefault();
+document.getElementById('contactForm').addEventListener('submit', (e)=>{
+  e.preventDefault();
+  let inputs = document.querySelectorAll('#contactForm input');
+  let label = document.querySelectorAll("#contactForm label")
+  let messageBox = document.querySelector('#contactForm textarea')
 
-  const name = document.getElementById('name-label').value.trim();
-  const email = document.getElementById('email-label').value.trim();
-  const message = document.getElementById('message-input').value.trim();
-
-  // Simple validation
-  if (!name || !email || !message) {
-    Swal.fire({
-      icon: 'error',
-      title: 'All fields are required',
-      text: 'Please fill in all fields before submitting the form.'
-    });
-    return;
-  }
-
-  // Email validation regex
-  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailPattern.test(email)) {
-    Swal.fire({
-      icon: 'error',
-      title: 'Invalid email address',
-      text: 'Please enter a valid email address.'
-    });
-    return;
-  }
-
-  // Send the form data using fetch
-  fetch('https://formsubmit.co/opusberedugo@gmail.com', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      name: name,
-      email: email,
-      message: message,
-      _captcha: 'false', // Disable default captcha if you are not using it
-      _next: 'https://ch'
-    })
-  })
-  .then(response => response.json())
-  .then(data => {
-    if (data.success) {
+  console.log("Submit Event");
+  
+  inputs.forEach((v,i)=>{
+    if(v.value.trim() === ""){
       Swal.fire({
-        icon: 'success',
-        title: 'Message sent',
-        text: 'Your message has been sent successfully!'
+        title: "Error",
+        text: `${label[i].textContent.substring(0,label[i].textContent.length-1)} field cannot be empty`,
+        icon: "error"
       });
-    } else {
-      Swal.fire({
-        icon: 'error',
-        title: 'Error',
-        text: 'There was an error sending your message. Please try again later.'
-      });
+    throw Error(`${label[i].textContent.substring(0,label[i].textContent.length-1)} field cannot be empty`);
     }
-  })
-  .catch(error => {
+  }) 
+
+  if(messageBox.value.trim() ===""){
     Swal.fire({
-      icon: 'error',
-      title: 'Error',
-      text: 'There was an error sending your message. Please try again later.'
+      title: "Error",
+      text: "Message Field cannot be empty",
+      icon: "error"
     });
-  });
+    throw Error("Message field cannot be empty")
+  }
+
+
+  if(!/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(inputs[1].value.trim())){
+    Swal.fire({
+      title: "Error",
+      text: `Please Enter a valid email`,
+      icon: "error"
+    });
+    throw Error("Please enter a valid Email")
+  }
+
+  document.getElementById('contactForm').submit();
 });
 

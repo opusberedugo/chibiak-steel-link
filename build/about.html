@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Chibiak Steel: Dedicated to Delivering Excellence in Steel</title>
   <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="./css/sweetalert2.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -306,7 +307,7 @@
           you in achieving your goals.</p>
       </div>
       <div class="col-span-1">
-        <form action="" class="w-full">
+        <form action="https://formsubmit.co/admin@chibiaksteel.com.ng" class="w-full">
           <label for="name-label" class="block">Name:</label>
           <input type="text" name="name" id="name-label"
             class="block w-full border-skyblue border-solid border-2 focus:border-4 rounded-md p-2 outline-none">
@@ -315,9 +316,11 @@
           <input type="text" name="email" id="email-label"
             class="block w-full border-skyblue border-solid border-2 rounded-md p-2 outline-none">
 
-          <label for="message-input" class="block mt-2">Message</label>
+          <label for="message-input" class="block mt-2">Message:</label>
           <textarea name="message" id="message-input"
             class="block w-full border-skyblue border-solid border-2 rounded-md p-2 outline-none h-40 resize-none"></textarea>
+
+          <input type="hidden" name="_next" value="chibiaksteel.com.ng/about.html">
 
           <button type="submit" class="bg-darkblue text-white px-6 py-3 my-3 rounded-3xl">Send Message</button>
 
@@ -375,14 +378,10 @@
     </div>
   </footer>
 
-  <script>
-    let menuButton = document.querySelector(".nav-menu-button");
-    let menuOptions = document.querySelector("nav .options");
-  
-    menuButton.addEventListener("click", (e)=>{
-      menuOptions.classList.toggle("hidden");
-    })
-  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./js/sweetalert2.all.js"></script>
+  <script src="./js/main.js"></script>
+ 
 </body>
 
 </html>
